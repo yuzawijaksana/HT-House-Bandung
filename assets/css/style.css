@@ -173,4 +173,35 @@ h2.header {
 .product-section #product3:checked ~ .first {
   margin-left: -40%;
 }
+
+.gallery-section .gallery-hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.gallery-section .gallery-hero h2 {
+  font-size: 4em;
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0 0 3px #333);
+          filter: drop-shadow(0 0 3px #333);
+}
+
+@media (max-width: 576px) {
+  .gallery-section .gallery-hero h2 {
+    font-size: 2em;
+  }
+}
+
+.gallery-section .gallery-hero h2 input[type="button"] {
+  position: absolute;
+  bottom: 8px;
+}
+
+.gallery-section .gallery-hero img {
+  width: 100%;
+  height: 25em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
