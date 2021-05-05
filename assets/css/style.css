@@ -23,6 +23,50 @@ h2.header {
   }
 }
 
+.navigation {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: #189E93;
+}
+
+.navigation img {
+  height: 50px;
+}
+
+.navigation ul {
+  margin: 0px;
+}
+
+.navigation ul li {
+  position: relative;
+  display: inline-block;
+  padding: 1em .2em;
+  margin: 0 1em;
+  list-style: none;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navigation ul li span.active {
+  content: '';
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-radius: 25em;
+  background-color: #FAA919;
+}
+
+.navigation ul.right-nav {
+  float: right;
+}
+
 .about-section .row {
   margin: 0 4em;
 }
@@ -232,12 +276,14 @@ h2.header {
   background-image: linear-gradient(to bottom right, #FFEBCA, #CFDFD4);
   padding: 30px 0;
   margin: 30px 0;
+  height: 525px;
 }
 
 .gallery-section .gallery-hero {
   position: relative;
   text-align: center;
   color: white;
+  max-height: 100%;
 }
 
 .gallery-section .gallery-hero h2 {
@@ -270,10 +316,13 @@ h2.header {
 }
 
 .gallery-section .gallery-hero img {
-  width: 100%;
-  height: 25em;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 450px;
+  background-size: cover;
+}
+
+.gallery-section .gallery-hero.small img {
+  height: 225px;
+  margin-bottom: 1em;
 }
 
 footer {
